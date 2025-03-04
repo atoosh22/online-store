@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div
+          class="container flex justify-between items-center bg-[#CA6B41] text-white px-7 py-5 shadow-lg"
+        >
+          <img class="w-[80px] md:w-[100px]" src="img/logo.png" alt="" />
+          <ul class="flex hidden md:flex gap-6">
+            <a href="#"> <li class="dropdow">HOME</li></a>
+            <a href="#"> <li>SHOP</li></a>
+            <a href="#"><li>ABOUT</li></a>
+            <a href="#"><li>PAGES</li></a>
+            <a href="#"><li>BLOG</li></a>
+            <a href="#"><li>CONTACT</li></a>
+          </ul>
+          <ion-icon class="text-4xl hidden md:flex"name="cart-outline"></ion-icon>
+          <ion-icon id="icon"class="text-4xl md:hidden"name="menu-outline"></ion-icon>
+        </div>
+  
+        <!-- mobile menu -->
+        <div id="mobilemenu" class="hidden md:hidden bg-[#221D1C] text-white">
+          <ul class="flex flex-col space-y-3 p-6">
+            <a href="#"> <li>HOME</li></a>
+            <a href="#"> <li>SHOP</li></a>
+            <a href="#"><li>ABOUT</li></a>
+            <a href="#"><li>PAGES</li></a>
+            <a href="#"><li>BLOG</li></a>
+            <a href="#"><li>CONTACT</li></a>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- hero -->
+      <div class="header">
+        <div class="img bg-[url('img/shop-hero.jpg')] bg-cover bg-center h-screen w-full">
+          <h3 class="text-white text-center pt-[160px] text-6xl font-light font-[Roboto]">Products By Viasu
+           
+          </h3>
+          <p class="text-white text-center text-5xl pt-6 font-thin text-8xl">Our Shop</p>
+        </div>
+      </div>
+
+      <!-- end hero -->
+      
+      <!-- product cards -->
+      <div class="container mx-10 my-25">
+        <div id="clickproduct" class="grid grid-cols-1 md:grid-cols-2 gap-3">
+
+          <!-- card 1 -->
+          <div class="bg-[#fff] shadow-lg my-20 pb-10 w-8/10 mx-1 md:ml-20 ">
+            <p class="pl-20 pt-10">Creams</p>
+            <h3 class="pl-20 py-3 text-3xl">Anti-Aging Cream</h3>
+            <h5 class="text-center py-3 text-xl mx-10 pb-12 ">Enim venia quis nostrud exrcit ulamco laboris com  conseq reprehen derit fugiat nula pariatur sint   ipsum occaecat. Lorem ipsum dolor sit am etur   adipisicing elit sed tempor.</h5>
+            <button class="rounded-lg bg-[#AAD302] px-4 py-6 cursor-pointer w-full hover:bg-[#EA5A31] text-white"> View Collection</button>
+               
+          </div>
+          <div class="img">
+            <img class="w-8/10 my-20" src="img/img-product-1.jpg" alt="product name">
+          </div>
+
+          
+       <!-- card 2 -->
+
+       <div class="bg-[#fff] shadow-lg my-20 pb-10 w-8/10 mx-1 md:ml-20 ">
+        <p class="pl-20 pt-10">Hair care</p>
+        <h3 class="pl-20 py-3 text-3xl">Hair Style Gel</h3>
+        <h5 class="text-center py-3 text-xl mx-10 pb-12 ">Enim venia quis nostrud exrcit ulamco laboris com  conseq reprehen derit fugiat nula pariatur sint   ipsum occaecat. Lorem ipsum dolor sit am etur   adipisicing elit sed tempor.</h5>
+        <button class="rounded-lg bg-[#AAD302] px-4 py-6 cursor-pointer w-full hover:bg-[#EA5A31] text-white">View Collection</button>
+               
+      </div>
+      <div class="img">
+        <img class="w-8/10 my-20" src="img/img-product-3.jpg" alt="product name">
+      </div>
+
+   <!-- card 3 -->
+
+   <div class="bg-[#fff] shadow-lg pb-10 w-8/10 mx-1 md:ml-20 my-20">
+    <p class="pl-20 pt-10">A Skinny</p>
+    <h3 class="pl-20 py-3 text-3xl">A Skinny Lotion</h3>
+    <h5 class="text-center py-3 text-xl mx-10 pb-12 ">Enim venia quis nostrud exrcit ulamco laboris com  conseq reprehen derit fugiat nula pariatur sint   ipsum occaecat. Lorem ipsum dolor sit am etur   adipisicing elit sed tempor.</h5>
+    <button class="rounded-lg bg-[#AAD302] px-4 py-6 cursor-pointer w-full hover:bg-[#EA5A31] text-white">View collection</button>
+               
+  </div>
+  <div class="img my-20">
+    <img class="w-8/10" src="img/img-product-2.jpg" alt="product name">
+  </div>
+
+
+
+        </div>
+      </div>
+
+      <!-- end cards -->
+
+      <!-- footer -->
+      <div class="container  ">
+        <div class="bg-[#CE794D] flex justify-center gap-20 py-6 w-full  shadow-lg flex-col md:flex-row p-10">
+          <img src="img/logo.png" alt="">
+          <p>Enim venia quis nostrud exrcit ulamco laboris nst aliquipas conseqa<br> 
+            reprehen derit eu fugiat nula pariatur. Lorem ipsum dolor sitya amet <br> 
+            consectetur adipisicing elit, sed do eiusmod tempor.</p>
+        </div>
+   <!-- links -->
+   <div class="links flex bg-[#CE794D] pl-32 gap-6 md:gap-20 py-6 w-full  shadow-lg text-white flex-col md:flex-row ">
+    <div class="quicklinks">
+      <h3 class="font-bold text-[#3e3e3e]">Quick Links</h3>
+      <a href="home"> Home Page</a><br>
+      <a href="Contact">Contact</a><br>
+      <a href="click.html">  Shop Now</a><br>
+    </div>
+
+     <!-- Get suport -->
+   <div class="get suport">
+    <h3 class="font-bold text-[#3e3e3e]"> Get Suport</h3>
+    <a href="home"> My acount</a><br>
+    <a href="Contact">order history</a><br>
+    <a href="Shop">  payment</a><br>
+   </div>
+
+    <!-- follow us -->
+    <div class="follow us">
+      <h3 class="font-bold text-[#3e3e3e]">Follow Us</h3>
+      <a href="home"> Facbook</a><br>
+      <a href="Contact">WhatsApp</a><br>
+      <a href="Shop">  instagram</a>
+    </div>
+
+    <div class=" flex gap-2 w-[30px] h-[10px] md:w-[105px] h-[40px]  ">
+      <img src="img/payment-1.png" alt="">
+      <img src="img/payment-2.png" alt="">
+      <img src="img/payment-3.png" alt="">
+      <img src="img/payment-4.png" alt="">
+      <img src="img/payment-5.png" alt="">
+      <img src="img/payment-4.png" alt="">
+    </div>
+
+   </div>
+
+
+        </div>
+  
+      <!-- end footer -->
+
+
+   <!-- external javascript link -->
+    <script src="app.js"></script>
+
+      <!-- links -->
+
+      <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+</body>
+</html>

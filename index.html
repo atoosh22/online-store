@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online  Cusmatics</title>
+   <script src="tliwind css.js"></script>
+    <!-- fonts -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+      </style>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  </style>
+
+ <style>
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+<!-- End  fonts -->
+  </head>
+  <body>
+    <!-- header logo and menu -->
+    <nav>
+      <div
+        class="container flex justify-between items-center bg-[#CA6B41] text-white px-7 py-5 shadow-lg"
+      >
+        <img class="w-[80px] md:w-[100px]" src="img/logo.png" alt="" />
+        <ul class="flex hidden md:flex gap-6">
+          <a href="#"> <li class="dropdow">HOME</li></a>
+          <a href="#"> <li>SHOP</li></a>
+          <a href="#"><li>ABOUT</li></a>
+          <a href="#"><li>PAGES</li></a>
+          <a href="#"><li>BLOG</li></a>
+          <a href="#"><li>CONTACT</li></a>
+        </ul>
+        <ion-icon class="text-4xl hidden md:flex"name="cart-outline"></ion-icon>
+        <ion-icon id="icon"class="text-4xl md:hidden"name="menu-outline"></ion-icon>
+      </div>
+
+      <!-- mobile menu -->
+      <div id="mobilemenu" class="hidden md:hidden bg-[#fff]">
+        <ul class="flex flex-col space-y-3 p-6">
+          <a href="#"> <li>HOME</li></a>
+          <a href="#"> <li>SHOP</li></a>
+          <a href="#"><li>ABOUT</li></a>
+          <a href="#"><li>PAGES</li></a>
+          <a href="#"><li>BLOG</li></a>
+          <a href="#"><li>CONTACT</li></a>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- hero background img and text -->
+    <div class="header">
+      <div class="img bg-[url('img/home-hero.jpg')] bg-cover bg-center h-screen w-full">
+        <h2 class="text-white text-center pt-32 text-6xl font-bold font-[Roboto]">
+          Look & Feel Modern
+        </h2>
+        <p class="text-white text-center text-3xl pt-6">Cosmetics By Viasu</p>
+      </div>
+    </div>
+
+    <!-- end hero and menu -->
+
+
+            <!-- img sliders -->
+    <div class="container flex justify-center mx-1 ">
+        <div id="productimgs" class="grid grid-cols-1 md:grid-cols-4 gap-5 text-center">
+           
+        </div>
+    </div>
+
+    <!-- about -->
+
+    <div class="container flex mx-6 gap-5 flex-col md:flex-row">
+     <div class="img">
+      <img src="img/img-about.jpg" alt="">
+      <h3 class="bg-[#F3E3DE]  w-32 px-2 py-2 font-[Poppins] text-4xl">ABOUT</h3>
+     </div>
+      <div class="text pl-10 pt-12">
+        <h3 class="font-[Roboto] text-xl">viasun cosmetics</h3>
+        <h2 class="py-4 text-3xl font-bold font-[Roboto] ">Making Every Face Perfect</h2>
+        <p class="font-[Poppins] mb-10">Enim venia quis nostrud exrcit ulamco laboris nst aliquip com <br>
+          conseq reprehen derit fugiat nula pariatur excpteur sint ipsum <br>
+           occaecat. Lorem ipsum dolor sit amet, consect etur adipisicing elit <br> 
+           sed do eiusmod tempor</p>
+           <a class="my-10 bg-[#EA5A31] text-white px-7 py-4 hover:bg-[#222222]" href="#">VIEW COLLECTION</a>
+      </div>
+    </div>
+     <!-- end about -->
+
+     <!-- producticons -->
+
+    <div class="container mt-10 mx-6">
+      <div id="producticons" class="grid grid-cols-2 md:grid-cols-5 gap-5">
+
+       
+        </div>
+      </div>
+
+      <div class="text text-center">
+        <h4 class="font-[Poppins] pt-6  text-3xl">Discover the best illuminating Eye Brows cosmetics</h4>
+        <p class="py-6 font-[Roboto] pb-10">Nostrud exercitation ullamco laboris nist aliquip commodo consequat. Duis aute irure dolor in reprehenderit in voluptate <br>
+          velit esse cillum dolor fugiat nulla pariatur. Excepteur we care for you sint cupidatat non ipsum sed dolor proident.</p>
+          <a class="mb-10 bg-[#EA5A31] text-white px-7 py-4 hover:bg-[#222222]" href="#">VIEW COLLECTION</a>
+      
+       </div>
+      
+      
+          <!--End  producticons -->
+
+          <!-- catogories -->
+           <div class="container  mt-10 text-center">
+            <p class="pt-20">Best suiting & clothing</p>
+            <h2 class="text-5xl  font-[Roboto] py-5">Shop New Arrivals</h2>
+
+            <div id="productcards" class="grid grid-cols-1 md:grid-cols-3 gap-6 mx-10 md:mx-1">
+              
+                
+              </div>
+            </div>
+
+           </div>
+
+           <!-- end  catogories -->
+
+
+
+           <!-- footer -->
+            <div class="container  ">
+            <div class="bg-[#CE794D] flex justify-center gap-20 py-6 w-full  shadow-lg flex-col md:flex-row p-10">
+              <img src="img/logo.png" alt="">
+              <p>Enim venia quis nostrud exrcit ulamco laboris nst aliquipas conseqa<br> 
+                reprehen derit eu fugiat nula pariatur. Lorem ipsum dolor sitya amet <br> 
+                consectetur adipisicing elit, sed do eiusmod tempor.</p>
+            </div>
+       <!-- links -->
+       <div class="links flex bg-[#CE794D] pl-32 gap-6 md:gap-20 py-6 w-full  shadow-lg text-white flex-col md:flex-row ">
+        <div class="quicklinks">
+          <h3 class="font-bold text-[#3e3e3e]">Quick Links</h3>
+          <a href="home"> Home Page</a><br>
+          <a href="Contact">Contact</a><br>
+          <a href="click.html">  Shop Now</a><br>
+        </div>
+
+         <!-- Get suport -->
+       <div class="get suport">
+        <h3 class="font-bold text-[#3e3e3e]"> Get Suport</h3>
+        <a href="home"> My acount</a><br>
+        <a href="Contact">order history</a><br>
+        <a href="Shop">  payment</a><br>
+       </div>
+    
+        <!-- follow us -->
+        <div class="follow us">
+          <h3 class="font-bold text-[#3e3e3e]">Follow Us</h3>
+          <a href="home"> Facbook</a><br>
+          <a href="Contact">WhatsApp</a><br>
+          <a href="Shop">  instagram</a>
+        </div>
+
+        <div class=" flex gap-2 w-[30px] h-[10px] md:w-[105px] h-[40px]  ">
+          <img src="img/payment-1.png" alt="">
+          <img src="img/payment-2.png" alt="">
+          <img src="img/payment-3.png" alt="">
+          <img src="img/payment-4.png" alt="">
+          <img src="img/payment-5.png" alt="">
+          <img src="img/payment-4.png" alt="">
+        </div>
+
+       </div>
+  
+
+            </div>
+            
+<!-- //waan dhameeyey website kii  -->
+ <h2>footer only</h2>
+    
+    
+
+
+    <script src="app.js"></script>
+
+    <!-- links -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

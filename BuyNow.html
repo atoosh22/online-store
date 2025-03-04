@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  
+</head>
+<body>
+    <nav>
+        <div
+          class="container flex justify-between items-center bg-[#CA6B41] text-white px-7 py-5 shadow-lg"
+        >
+          <img class="w-[80px] md:w-[100px]" src="img/logo.png" alt="" />
+          <ul class="flex hidden md:flex gap-6">
+            <a href="#"> <li class="dropdow">HOME</li></a>
+            <a href="#"> <li>SHOP</li></a>
+            <a href="#"><li>ABOUT</li></a>
+            <a href="#"><li>PAGES</li></a>
+            <a href="#"><li>BLOG</li></a>
+            <a href="#"><li>CONTACT</li></a>
+          </ul>
+          <ion-icon class="text-4xl hidden md:flex"name="cart-outline"></ion-icon>
+          <ion-icon id="icon"class="text-4xl md:hidden"name="menu-outline"></ion-icon>
+        </div>
+  
+        <!-- mobile menu -->
+        <div id="mobilemenu" class="hidden md:hidden bg-[#221D1C] text-white">
+          <ul class="flex flex-col space-y-3 p-6">
+            <a href="#"> <li>HOME</li></a>
+            <a href="#"> <li>SHOP</li></a>
+            <a href="#"><li>ABOUT</li></a>
+            <a href="#"><li>PAGES</li></a>
+            <a href="#"><li>BLOG</li></a>
+            <a href="#"><li>CONTACT</li></a>
+          </ul>
+        </div>
+      </nav>
+
+
+
+      <script src="app.js"></script>
+
+    <!-- end header and menu -->
+
+    <div class="container mx-auto my-20 w-4/5">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <div class="shadow-lg bg-gray-100 p-5">
+                <h2 id="ProductName" class="text-3xl text-center my-5 font-bold"></h2>
+                <h3 id="ProductPrice" class="text-3xl text-center mt-6"> <span class="line-through text-red-500">$55</span></h3>
+                <input class="border rounded-lg px-3 py-2 my-6 w-full focus:ring-2 focus:ring-blue-400" type="number" placeholder="Quantity"><br>
+                <input class="border rounded-lg px-3 py-2 my-6 w-full focus:ring-2 focus:ring-blue-400" type="number" placeholder="Enter phone number"><br>
+                <button class="rounded-lg bg-[#AAD302] px-4 py-6 cursor-pointer w-full hover:bg-[#EA5A31] text-white">Buy Now</button>
+                <p class="mt-14 text-center">A classic novel that explores the themes of love, class, and reputation. The story follows Elizabeth Bennet, a sharp-witted young woman, as she navigates societal expectations and her evolving feelings for the enigmatic Mr. Darcy. Their relationship is marked by misunderstandings, personal growth, and ultimately, a deep connection.</p>
+            </div>
+            <div class="flex justify-center items-center">
+                <a href="index.html"><img id="ProductImg" class="h-auto max-w-full"  alt="product img"></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+
+    <script>
+        // Retrieve product details from sessionStorage
+        const ProductName = sessionStorage.getItem("ProductName");
+        const ProductImg = sessionStorage.getItem("ProductImg");
+        const ProductPrice = sessionStorage.getItem("ProductPrice");
+    
+        // Update the HTML elements with the retrieved values
+        document.getElementById("ProductName").innerText = ProductName; // No quotes needed
+        document.getElementById("ProductPrice").innerText = `$${ProductPrice}`; // No quotes needed
+        document.getElementById("ProductImg").src = ProductImg; // No quotes needed
+    </script>
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
