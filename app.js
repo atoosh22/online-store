@@ -3,10 +3,28 @@ const mobilemenu=document.getElementById("mobilemenu");
 icon.addEventListener("click", ()=>{
     mobilemenu.classList.toggle("hidden");
 })
+ // end menu
+//contact form for jquery
+
+$(document).ready(function() {
+    $('#contact-form').on('submit', function(event) {
+        event.preventDefault(); // Ka hortag in foomka la diro
+
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var message = $('#message').val();
+
+        // Halkan waxaad ku dari kartaa koodhka inaad farriinta dirto
+        // Tusaale ahaan, AJAX call ama wax kale
+
+        $('#response').html('<p class="text-green-500">Fariintaada waa la diray!</p>');
+        $(this).trigger('reset'); // Nadiifi foomka
+    });
+});
 
 
 
-      // end menu
+     
 
 
 // product slider
