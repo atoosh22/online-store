@@ -4,6 +4,8 @@ icon.addEventListener("click", ()=>{
     mobilemenu.classList.toggle("hidden");
 })
 
+
+
       // end menu
 
 
@@ -123,7 +125,7 @@ Allproducts.map((product)=>{
                 <button class="rounded-lg bg-[#FF7B4E] text-white px-2 py-1 cursor-pointer" onclick="buyNow('${product.Image}', '${product.name}', '${product.price}')">Buy Now</button>
                 
             </div>`
-            productcards.innerHTML += producthtml;
+            Productcards.innerHTML += producthtml;
 
 })
 
