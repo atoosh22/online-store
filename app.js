@@ -193,7 +193,7 @@ Allpr.map((product)=>{
             clickproduct.innerHTML += producthtml;
 
 })
-
+//  end click page
 
 
 
