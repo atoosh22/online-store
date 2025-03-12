@@ -196,4 +196,24 @@ Allpr.map((product)=>{
 //  end click page
 
 
+// contact page
+
+$(document).ready(function() {
+    $('#contact-form').on('submit', function(event) {
+        event.preventDefault(); // Ka hortag in foomka la diro
+
+        var name = $('#name').val();
+        var email = $('#email').val();
+        var message = $('#message').val();
+
+        // Halkan waxaad ku dari kartaa koodhka inaad farriinta dirto
+        // Tusaale ahaan, AJAX call ama wax kale
+
+        $('#response').html('<p class="text-green-500">Fariintaada waa la diray!</p>');
+        $(this).trigger('reset'); // Nadiifi foomka
+    });
+});
+
+
+
 
